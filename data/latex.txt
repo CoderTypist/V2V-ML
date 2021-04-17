@@ -1,0 +1,64 @@
+
+https://www.codecogs.com/latex/eqneditor.php
+https://www.hostmath.com/
+
+# general stuff
+
+    # actual values
+
+# simulate bsm error
+
+    # bsm coordinate
+    a = (a_x, a_y)
+    b = (b_x, b_y)
+
+    # types of nodes
+    T = \{good, faulty, malicious\}
+
+    # set of errors
+    E = \{e_{good}, e_{faulty}, e_{malicious}\}
+
+    # calculate x
+    b_x=a_x+r*cos(\theta)
+
+    # calculate y
+    b_y=a_y+r*sin(\theta)
+
+# average distance between actual x and y and bsm reported x and y
+
+    # proper formula
+    \frac{1}{n}\sum_{i=1}^nd_{a_i,b_i}
+
+    # readable formula
+    \frac{d_{a_1,b_1}+d_{a_2,b_2}+d_{a_3,b_3}}{3}
+
+# average ratio
+
+    # proper formula
+    \frac{1}{n-1}\sum_{i=1}^{n-1}{\frac{d_{a_i,a_{i+1}}}{d_{b_i,b_{i+1}}}}
+
+    # readable formula
+    \frac{\frac{d_{a_1,a_2}}{d_{b_1,b_2}}+\frac{d_{a_2,a_3}}{d_{b_2,b_3}}}{2}
+
+# angle
+
+    # proper formula
+    \frac{1}{n-2}\sum_{i=1}^{n-2}\angle{b_ib_{i+1}b_{i+2}}
+
+    # readable formula
+    \frac{\angle{b_1b_2b_3}}{1}
+
+# slope
+
+    # idk
+    LinearRegression(B).coef\_[0][0]
+
+# average dif
+
+    # proper formula
+    \frac{1}{2n}\sum_{i=1}^{n}|a_x-b_x|+|a_y-b_y|
+
+    # readable
+    \frac{|a_{1_x}-b_{1_x}|+|a_{1_y}-b_{1_y}|+|a_{2_x}-b_{2_x}|+|a_{2_y}-b_{2_y}|+|a_{3_x}-b_{3_x}|+|a_{3_y}-b_{3_y}|}{2*3}
+
+\frac{d_{N_1},d_{N_2}+}{cd}
